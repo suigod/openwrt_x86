@@ -22,7 +22,10 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makef
 # sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 
-cd package/lean
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon-18.06
-git clone https://github.com/kongfl888/luci-app-adguardhome
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/lean/luci-theme-edge
+
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+
+# git clone https://github.com/kongfl888/luci-app-adguardhome
