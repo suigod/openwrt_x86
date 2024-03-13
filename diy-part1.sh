@@ -28,4 +28,6 @@ git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/lean/luci-
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
-# git clone https://github.com/kongfl888/luci-app-adguardhome
+git clone https://github.com/fw876/helloworld.git
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
+git clone https://github.com/esirplayground/luci-app-poweroff.git
