@@ -29,6 +29,13 @@ git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/lean/luci-
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
-git clone https://github.com/fw876/helloworld.git package/lean/helloworld
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git -C package/helloworld pull
+rm -rf package/helloworld
+
+rm -rf package/lean/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
+
+rm -rf package/lean/luci-app-poweroff
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
