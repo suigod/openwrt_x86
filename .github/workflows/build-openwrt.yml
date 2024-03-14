@@ -1,5 +1,5 @@
 # By JiaJiaXd 2021-2023
-name: Build OpenWrt
+name: Build OpenWrt cleanversion
 
 on:
   push:
