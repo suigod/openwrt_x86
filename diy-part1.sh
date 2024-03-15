@@ -25,8 +25,8 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makef
 # rm -rf ./feeds/luci/themes/luci-theme-argon
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 
-rm -rf package/helloworld
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+# rm -rf package/helloworld
+# git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # git clone https://github.com/kongfl888/luci-app-adguardhome
 
