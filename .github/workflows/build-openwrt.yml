@@ -2,10 +2,10 @@
 name: Build OpenWrt
 
 on:
-  push:
-    branches: [ Diy6.6 ]
-  pull_request:
-    branches: [  Diy6.6 ]
+  # push:
+  #   branches: [ Diy6.6 ]
+  # pull_request:
+  #   branches: [  Diy6.6 ]
   repository_dispatch:
   workflow_dispatch:
     inputs:
