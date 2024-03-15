@@ -25,8 +25,8 @@ cd lede/package/lean
 rm -rf ./feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 
-rm -rf package/helloworld
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+# rm -rf package/helloworld
+# git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
