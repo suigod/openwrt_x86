@@ -24,8 +24,6 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makef
 cd lede/package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-make menuconfig #choose LUCI->Theme->Luci-theme-argon
-make -j1 V=s
 
 # git clone https://github.com/kongfl888/luci-app-adguardhome
 
