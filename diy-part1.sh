@@ -25,9 +25,9 @@ cd lede/package/lean
 rm -rf ./feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 
- cd lede/package
- rm -rf package/helloworld
- git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+cd lede/package/lean/  
+git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/luci-app-vssr.git  
 
 # git clone https://github.com/kongfl888/luci-app-adguardhome
 
