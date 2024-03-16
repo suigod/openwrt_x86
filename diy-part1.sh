@@ -28,8 +28,11 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-
 rm -rf ./feeds/luci/themes/luci-app-argon-config # if have
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
 
-# rm -rf ./feeds/luci/themes/luci-app-alist # if have
-# git clone https://github.com/sbwml/luci-app-alist luci-app-alist
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
 
 # cd lede/package/lean/  
 # git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
