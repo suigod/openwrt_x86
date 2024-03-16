@@ -30,7 +30,7 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makef
 
 cd lede/package/lean/  
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-git clone https://github.com/jerrykuku/openwrt-package
+# git clone https://github.com/jerrykuku/openwrt-package
 
 # git clone https://github.com/kongfl888/luci-app-adguardhome
 
