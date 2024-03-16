@@ -30,9 +30,8 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-a
 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-alist package/alist
 
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
 
 # cd lede/package/lean/  
 # git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
