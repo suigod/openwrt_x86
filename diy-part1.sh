@@ -32,10 +32,11 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-a
  rm -rf package/helloworld
  git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
-# rm -rf feeds/packages/lang/golang
-# git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
-# git clone https://github.com/sbwml/luci-app-alist package/alist
-
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-alist package/alist
+sudo apt update
+sudo apt install libfuse-dev
 
 # cd lede/package/lean/  
 # git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
