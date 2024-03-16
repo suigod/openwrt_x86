@@ -25,6 +25,9 @@ cd lede/package/lean
 rm -rf ./feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 
+rm -rf ./feeds/luci/themes/luci-app-argon-config # if have
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
+
 cd lede/package/lean/  
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
 git clone https://github.com/jerrykuku/openwrt-package/luci-app-vssr.git  
